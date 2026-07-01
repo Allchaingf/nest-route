@@ -7,18 +7,89 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3AA4CEEB2FCC6466004BFB95 /* NestRouteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4CEEA2FCC6466004BFB95 /* NestRouteApp.swift */; };
-		3AA4CEED2FCC6466004BFB95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4CEEC2FCC6466004BFB95 /* ContentView.swift */; };
 		3AA4CEEF2FCC6468004BFB95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AA4CEEE2FCC6468004BFB95 /* Assets.xcassets */; };
 		3AA4CEF22FCC6468004BFB95 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AA4CEF12FCC6468004BFB95 /* Preview Assets.xcassets */; };
+		CAFE02000000000000000000 /* App/RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE01000000000000000000 /* App/RootView.swift */; };
+		CAFE02000000000000000001 /* DesignSystem/BirdGlyph.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE01000000000000000001 /* DesignSystem/BirdGlyph.swift */; };
+		CAFE02000000000000000002 /* DesignSystem/Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE01000000000000000002 /* DesignSystem/Charts.swift */; };
+		CAFE02000000000000000003 /* DesignSystem/Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE01000000000000000003 /* DesignSystem/Components.swift */; };
+		CAFE02000000000000000004 /* DesignSystem/Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE01000000000000000004 /* DesignSystem/Theme.swift */; };
+		CAFE02000000000000000005 /* Models/Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE01000000000000000005 /* Models/Models.swift */; };
+		CAFE02000000000000000006 /* NestRouteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE01000000000000000006 /* NestRouteApp.swift */; };
+		CAFE02000000000000000007 /* Stores/AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE01000000000000000007 /* Stores/AppSettings.swift */; };
+		CAFE02000000000000000008 /* Stores/DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE01000000000000000008 /* Stores/DataStore.swift */; };
+		CAFE02000000000000000009 /* Stores/NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE01000000000000000009 /* Stores/NotificationManager.swift */; };
+		CAFE0200000000000000000A /* ViewModels/FormViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE0100000000000000000A /* ViewModels/FormViewModels.swift */; };
+		CAFE0200000000000000000B /* Views/Calendar/CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE0100000000000000000B /* Views/Calendar/CalendarView.swift */; };
+		CAFE0200000000000000000C /* Views/Dashboard/DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE0100000000000000000C /* Views/Dashboard/DashboardView.swift */; };
+		CAFE0200000000000000000D /* Views/Groups/AddGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE0100000000000000000D /* Views/Groups/AddGroupView.swift */; };
+		CAFE0200000000000000000E /* Views/Groups/GroupDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE0100000000000000000E /* Views/Groups/GroupDetailView.swift */; };
+		CAFE0200000000000000000F /* Views/Groups/GroupsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE0100000000000000000F /* Views/Groups/GroupsListView.swift */; };
+		CAFE02000000000000000010 /* Views/History/HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE01000000000000000010 /* Views/History/HistoryView.swift */; };
+		CAFE02000000000000000011 /* Views/Main/MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE01000000000000000011 /* Views/Main/MainTabView.swift */; };
+		CAFE02000000000000000012 /* Views/Notifications/NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE01000000000000000012 /* Views/Notifications/NotificationsView.swift */; };
+		CAFE02000000000000000013 /* Views/Onboarding/OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE01000000000000000013 /* Views/Onboarding/OnboardingView.swift */; };
+		CAFE02000000000000000014 /* Views/Recommendations/RecommendationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE01000000000000000014 /* Views/Recommendations/RecommendationsView.swift */; };
+		CAFE02000000000000000015 /* Views/Reports/ReportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE01000000000000000015 /* Views/Reports/ReportsView.swift */; };
+		CAFE02000000000000000016 /* Views/Reports/TrendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE01000000000000000016 /* Views/Reports/TrendsView.swift */; };
+		CAFE02000000000000000017 /* Views/Routes/AddRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE01000000000000000017 /* Views/Routes/AddRecordView.swift */; };
+		CAFE02000000000000000018 /* Views/Routes/AddRouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE01000000000000000018 /* Views/Routes/AddRouteView.swift */; };
+		CAFE02000000000000000019 /* Views/Routes/RouteDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE01000000000000000019 /* Views/Routes/RouteDetailsView.swift */; };
+		CAFE0200000000000000001A /* Views/Routes/RoutePlannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE0100000000000000001A /* Views/Routes/RoutePlannerView.swift */; };
+		CAFE0200000000000000001B /* Views/Routes/RoutesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE0100000000000000001B /* Views/Routes/RoutesListView.swift */; };
+		CAFE0200000000000000001C /* Views/Settings/SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE0100000000000000001C /* Views/Settings/SettingsView.swift */; };
+		CAFE0200000000000000001D /* Views/Shared/Chrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE0100000000000000001D /* Views/Shared/Chrome.swift */; };
+		CAFE0200000000000000001E /* Views/Shared/FormControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE0100000000000000001E /* Views/Shared/FormControls.swift */; };
+		CAFE0200000000000000001F /* Views/Shared/Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE0100000000000000001F /* Views/Shared/Formatters.swift */; };
+		CAFE02000000000000000020 /* Views/Splash/LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE01000000000000000020 /* Views/Splash/LaunchView.swift */; };
+		CAFE02000000000000000021 /* Views/Stops/AddStopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE01000000000000000021 /* Views/Stops/AddStopView.swift */; };
+		CAFE02000000000000000022 /* Views/Stops/StopsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE01000000000000000022 /* Views/Stops/StopsListView.swift */; };
+		CAFE02000000000000000023 /* Views/Tasks/TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE01000000000000000023 /* Views/Tasks/TasksView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3AA4CEE72FCC6466004BFB95 /* NestRoute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NestRoute.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3AA4CEEA2FCC6466004BFB95 /* NestRouteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestRouteApp.swift; sourceTree = "<group>"; };
-		3AA4CEEC2FCC6466004BFB95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3AA4CEEE2FCC6468004BFB95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AA4CEF12FCC6468004BFB95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3AA4CEF82FCC647B004BFB95 /* NestRoute.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NestRoute.entitlements; sourceTree = "<group>"; };
+		3AA4CEF92FCC647E004BFB95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CAFE01000000000000000000 /* App/RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/RootView.swift; sourceTree = "<group>"; };
+		CAFE01000000000000000001 /* DesignSystem/BirdGlyph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem/BirdGlyph.swift; sourceTree = "<group>"; };
+		CAFE01000000000000000002 /* DesignSystem/Charts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem/Charts.swift; sourceTree = "<group>"; };
+		CAFE01000000000000000003 /* DesignSystem/Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem/Components.swift; sourceTree = "<group>"; };
+		CAFE01000000000000000004 /* DesignSystem/Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem/Theme.swift; sourceTree = "<group>"; };
+		CAFE01000000000000000005 /* Models/Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/Models.swift; sourceTree = "<group>"; };
+		CAFE01000000000000000006 /* NestRouteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestRouteApp.swift; sourceTree = "<group>"; };
+		CAFE01000000000000000007 /* Stores/AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stores/AppSettings.swift; sourceTree = "<group>"; };
+		CAFE01000000000000000008 /* Stores/DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stores/DataStore.swift; sourceTree = "<group>"; };
+		CAFE01000000000000000009 /* Stores/NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stores/NotificationManager.swift; sourceTree = "<group>"; };
+		CAFE0100000000000000000A /* ViewModels/FormViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels/FormViewModels.swift; sourceTree = "<group>"; };
+		CAFE0100000000000000000B /* Views/Calendar/CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Calendar/CalendarView.swift; sourceTree = "<group>"; };
+		CAFE0100000000000000000C /* Views/Dashboard/DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Dashboard/DashboardView.swift; sourceTree = "<group>"; };
+		CAFE0100000000000000000D /* Views/Groups/AddGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Groups/AddGroupView.swift; sourceTree = "<group>"; };
+		CAFE0100000000000000000E /* Views/Groups/GroupDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Groups/GroupDetailView.swift; sourceTree = "<group>"; };
+		CAFE0100000000000000000F /* Views/Groups/GroupsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Groups/GroupsListView.swift; sourceTree = "<group>"; };
+		CAFE01000000000000000010 /* Views/History/HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/History/HistoryView.swift; sourceTree = "<group>"; };
+		CAFE01000000000000000011 /* Views/Main/MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Main/MainTabView.swift; sourceTree = "<group>"; };
+		CAFE01000000000000000012 /* Views/Notifications/NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Notifications/NotificationsView.swift; sourceTree = "<group>"; };
+		CAFE01000000000000000013 /* Views/Onboarding/OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Onboarding/OnboardingView.swift; sourceTree = "<group>"; };
+		CAFE01000000000000000014 /* Views/Recommendations/RecommendationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Recommendations/RecommendationsView.swift; sourceTree = "<group>"; };
+		CAFE01000000000000000015 /* Views/Reports/ReportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Reports/ReportsView.swift; sourceTree = "<group>"; };
+		CAFE01000000000000000016 /* Views/Reports/TrendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Reports/TrendsView.swift; sourceTree = "<group>"; };
+		CAFE01000000000000000017 /* Views/Routes/AddRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Routes/AddRecordView.swift; sourceTree = "<group>"; };
+		CAFE01000000000000000018 /* Views/Routes/AddRouteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Routes/AddRouteView.swift; sourceTree = "<group>"; };
+		CAFE01000000000000000019 /* Views/Routes/RouteDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Routes/RouteDetailsView.swift; sourceTree = "<group>"; };
+		CAFE0100000000000000001A /* Views/Routes/RoutePlannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Routes/RoutePlannerView.swift; sourceTree = "<group>"; };
+		CAFE0100000000000000001B /* Views/Routes/RoutesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Routes/RoutesListView.swift; sourceTree = "<group>"; };
+		CAFE0100000000000000001C /* Views/Settings/SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Settings/SettingsView.swift; sourceTree = "<group>"; };
+		CAFE0100000000000000001D /* Views/Shared/Chrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Shared/Chrome.swift; sourceTree = "<group>"; };
+		CAFE0100000000000000001E /* Views/Shared/FormControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Shared/FormControls.swift; sourceTree = "<group>"; };
+		CAFE0100000000000000001F /* Views/Shared/Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Shared/Formatters.swift; sourceTree = "<group>"; };
+		CAFE01000000000000000020 /* Views/Splash/LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Splash/LaunchView.swift; sourceTree = "<group>"; };
+		CAFE01000000000000000021 /* Views/Stops/AddStopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Stops/AddStopView.swift; sourceTree = "<group>"; };
+		CAFE01000000000000000022 /* Views/Stops/StopsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Stops/StopsListView.swift; sourceTree = "<group>"; };
+		CAFE01000000000000000023 /* Views/Tasks/TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Tasks/TasksView.swift; sourceTree = "<group>"; };
+		F8A81E8B2FF50E7B002BC97B /* codemagic.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codemagic.yaml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +106,7 @@
 		3AA4CEDE2FCC6466004BFB95 = {
 			isa = PBXGroup;
 			children = (
+				F8A81E8B2FF50E7B002BC97B /* codemagic.yaml */,
 				3AA4CEE92FCC6466004BFB95 /* NestRoute */,
 				3AA4CEE82FCC6466004BFB95 /* Products */,
 			);
@@ -51,9 +123,45 @@
 		3AA4CEE92FCC6466004BFB95 /* NestRoute */ = {
 			isa = PBXGroup;
 			children = (
-				3AA4CEEA2FCC6466004BFB95 /* NestRouteApp.swift */,
-				3AA4CEEC2FCC6466004BFB95 /* ContentView.swift */,
+				3AA4CEF92FCC647E004BFB95 /* Info.plist */,
+				3AA4CEF82FCC647B004BFB95 /* NestRoute.entitlements */,
 				3AA4CEEE2FCC6468004BFB95 /* Assets.xcassets */,
+				CAFE01000000000000000000 /* App/RootView.swift */,
+				CAFE01000000000000000001 /* DesignSystem/BirdGlyph.swift */,
+				CAFE01000000000000000002 /* DesignSystem/Charts.swift */,
+				CAFE01000000000000000003 /* DesignSystem/Components.swift */,
+				CAFE01000000000000000004 /* DesignSystem/Theme.swift */,
+				CAFE01000000000000000005 /* Models/Models.swift */,
+				CAFE01000000000000000006 /* NestRouteApp.swift */,
+				CAFE01000000000000000007 /* Stores/AppSettings.swift */,
+				CAFE01000000000000000008 /* Stores/DataStore.swift */,
+				CAFE01000000000000000009 /* Stores/NotificationManager.swift */,
+				CAFE0100000000000000000A /* ViewModels/FormViewModels.swift */,
+				CAFE0100000000000000000B /* Views/Calendar/CalendarView.swift */,
+				CAFE0100000000000000000C /* Views/Dashboard/DashboardView.swift */,
+				CAFE0100000000000000000D /* Views/Groups/AddGroupView.swift */,
+				CAFE0100000000000000000E /* Views/Groups/GroupDetailView.swift */,
+				CAFE0100000000000000000F /* Views/Groups/GroupsListView.swift */,
+				CAFE01000000000000000010 /* Views/History/HistoryView.swift */,
+				CAFE01000000000000000011 /* Views/Main/MainTabView.swift */,
+				CAFE01000000000000000012 /* Views/Notifications/NotificationsView.swift */,
+				CAFE01000000000000000013 /* Views/Onboarding/OnboardingView.swift */,
+				CAFE01000000000000000014 /* Views/Recommendations/RecommendationsView.swift */,
+				CAFE01000000000000000015 /* Views/Reports/ReportsView.swift */,
+				CAFE01000000000000000016 /* Views/Reports/TrendsView.swift */,
+				CAFE01000000000000000017 /* Views/Routes/AddRecordView.swift */,
+				CAFE01000000000000000018 /* Views/Routes/AddRouteView.swift */,
+				CAFE01000000000000000019 /* Views/Routes/RouteDetailsView.swift */,
+				CAFE0100000000000000001A /* Views/Routes/RoutePlannerView.swift */,
+				CAFE0100000000000000001B /* Views/Routes/RoutesListView.swift */,
+				CAFE0100000000000000001C /* Views/Settings/SettingsView.swift */,
+				CAFE0100000000000000001D /* Views/Shared/Chrome.swift */,
+				CAFE0100000000000000001E /* Views/Shared/FormControls.swift */,
+				CAFE0100000000000000001F /* Views/Shared/Formatters.swift */,
+				CAFE01000000000000000020 /* Views/Splash/LaunchView.swift */,
+				CAFE01000000000000000021 /* Views/Stops/AddStopView.swift */,
+				CAFE01000000000000000022 /* Views/Stops/StopsListView.swift */,
+				CAFE01000000000000000023 /* Views/Tasks/TasksView.swift */,
 				3AA4CEF02FCC6468004BFB95 /* Preview Content */,
 			);
 			path = NestRoute;
@@ -137,8 +245,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AA4CEED2FCC6466004BFB95 /* ContentView.swift in Sources */,
-				3AA4CEEB2FCC6466004BFB95 /* NestRouteApp.swift in Sources */,
+				CAFE02000000000000000000 /* App/RootView.swift in Sources */,
+				CAFE02000000000000000001 /* DesignSystem/BirdGlyph.swift in Sources */,
+				CAFE02000000000000000002 /* DesignSystem/Charts.swift in Sources */,
+				CAFE02000000000000000003 /* DesignSystem/Components.swift in Sources */,
+				CAFE02000000000000000004 /* DesignSystem/Theme.swift in Sources */,
+				CAFE02000000000000000005 /* Models/Models.swift in Sources */,
+				CAFE02000000000000000006 /* NestRouteApp.swift in Sources */,
+				CAFE02000000000000000007 /* Stores/AppSettings.swift in Sources */,
+				CAFE02000000000000000008 /* Stores/DataStore.swift in Sources */,
+				CAFE02000000000000000009 /* Stores/NotificationManager.swift in Sources */,
+				CAFE0200000000000000000A /* ViewModels/FormViewModels.swift in Sources */,
+				CAFE0200000000000000000B /* Views/Calendar/CalendarView.swift in Sources */,
+				CAFE0200000000000000000C /* Views/Dashboard/DashboardView.swift in Sources */,
+				CAFE0200000000000000000D /* Views/Groups/AddGroupView.swift in Sources */,
+				CAFE0200000000000000000E /* Views/Groups/GroupDetailView.swift in Sources */,
+				CAFE0200000000000000000F /* Views/Groups/GroupsListView.swift in Sources */,
+				CAFE02000000000000000010 /* Views/History/HistoryView.swift in Sources */,
+				CAFE02000000000000000011 /* Views/Main/MainTabView.swift in Sources */,
+				CAFE02000000000000000012 /* Views/Notifications/NotificationsView.swift in Sources */,
+				CAFE02000000000000000013 /* Views/Onboarding/OnboardingView.swift in Sources */,
+				CAFE02000000000000000014 /* Views/Recommendations/RecommendationsView.swift in Sources */,
+				CAFE02000000000000000015 /* Views/Reports/ReportsView.swift in Sources */,
+				CAFE02000000000000000016 /* Views/Reports/TrendsView.swift in Sources */,
+				CAFE02000000000000000017 /* Views/Routes/AddRecordView.swift in Sources */,
+				CAFE02000000000000000018 /* Views/Routes/AddRouteView.swift in Sources */,
+				CAFE02000000000000000019 /* Views/Routes/RouteDetailsView.swift in Sources */,
+				CAFE0200000000000000001A /* Views/Routes/RoutePlannerView.swift in Sources */,
+				CAFE0200000000000000001B /* Views/Routes/RoutesListView.swift in Sources */,
+				CAFE0200000000000000001C /* Views/Settings/SettingsView.swift in Sources */,
+				CAFE0200000000000000001D /* Views/Shared/Chrome.swift in Sources */,
+				CAFE0200000000000000001E /* Views/Shared/FormControls.swift in Sources */,
+				CAFE0200000000000000001F /* Views/Shared/Formatters.swift in Sources */,
+				CAFE02000000000000000020 /* Views/Splash/LaunchView.swift in Sources */,
+				CAFE02000000000000000021 /* Views/Stops/AddStopView.swift in Sources */,
+				CAFE02000000000000000022 /* Views/Stops/StopsListView.swift in Sources */,
+				CAFE02000000000000000023 /* Views/Tasks/TasksView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +337,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -264,11 +406,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NestRoute/NestRoute.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NestRoute/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NestRoute/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow to use your camera in this application";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -292,11 +437,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NestRoute/NestRoute.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NestRoute/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NestRoute/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow to use your camera in this application";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
