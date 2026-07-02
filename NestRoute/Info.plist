@@ -4,7 +4,7 @@
 <dict>
 	<key>BGTaskSchedulerPermittedIdentifiers</key>
 	<array>
-		<string>com.nastynest.NestRoute</string>
+		<string>com.routinenest.NestRoute</string>
 	</array>
 	<key>NSAppTransportSecurity</key>
 	<dict>
